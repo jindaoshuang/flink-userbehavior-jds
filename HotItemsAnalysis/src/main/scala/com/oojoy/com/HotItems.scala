@@ -122,6 +122,7 @@ object HotItems {
         allItems.add(item)
       }
 
+
       //按照count大小排序
       val sortedItem: ListBuffer[ItemViewCount] = allItems.sortBy(_.count)(Ordering.Long.reverse).take(topSize)
     itemState.clear()
